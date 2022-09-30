@@ -1,0 +1,6 @@
+node_modules/
+server.log
+.idea/
+package-lock.json
+.ssh/
+.env
