@@ -1,15 +1,15 @@
 ﻿# MemoriesInPlace
  
- This repository contains materials to power the GitHubPages website [Memories in Place](https://hcr-gh.github.io/MemoriesInPlace/)
+ This repository contains materials to power a website for the Memories in Place project.
  
- Currently the site is in a very early stage of development and largely consists of testing that things work how I want them to
+The site contains oral history recordings collected by Remembering the Past and which can be accessed through this website - the idea being that users can scan a QR code in a public place and hear a memory connected to that place.
  
- It will be made to look nicer in due course!
- 
- Memories in Place is being created as part of my PhD research at Newcastle University in collaboration with [Remembering the Past](https://www.rememberingthepast.co.uk/)
+The site also lets people record their own memory using the [MediaRecorder API](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) and uploads the recording to Google Drive and the associated information to Google Sheets - both done using Google's APIs.
 
- All files in the Audio folder are the copyright of Remembering the Past and are used here with permission.
+Memories in Place is being created as part of my PhD research at Newcastle University in collaboration with [Remembering the Past](https://www.rememberingthepast.co.uk/)
 
- Memories in Place logo designed by Lottie Rowling.
+All files in the Audio folder are the copyright of Remembering the Past and are used here with permission.
+
+Memories in Place logo designed by Lottie Rowling.
  
  
