@@ -1,4 +1,4 @@
-﻿# MemoriesInPlace
+﻿# Memories In Place
  
  This repository contains materials to power a website for the Memories in Place project.
  

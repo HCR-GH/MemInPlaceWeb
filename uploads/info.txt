@@ -1,0 +1,1 @@
+This folder holds the recordings temporarily before they are uploaded to Google Drive, after this they are deleted from this folder.

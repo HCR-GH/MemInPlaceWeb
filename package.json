@@ -1,7 +1,7 @@
 {
   "name": "memoriesinplace",
   "version": "1.0.0",
-  "description": "This repository contains materials to power the GitHubPages website [Memories in Place](https://hcr-gh.github.io/MemoriesInPlace/)",
+  "description": "This repository contains materials to power the Memories in Place website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HCR-GH/MemoriesInPlace.git"
+    "url": "git+https://github.com/HCR-GH/MemInPlaceWeb.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HCR-GH/MemoriesInPlace/issues"
+    "url": "https://github.com/HCR-GH/MemInPlaceWeb/issues"
   },
-  "homepage": "https://github.com/HCR-GH/MemoriesInPlace#readme",
+  "homepage": "https://github.com/HCR-GH/MemInPlaceWeb#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
