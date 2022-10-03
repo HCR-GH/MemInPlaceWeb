@@ -10,6 +10,7 @@ $dark-slate-gray: #1A5E63;
 $logo-blue: #90B9C8;
 $old-rose: #C97B84;
 $brown: #757763;
+$med-light-blue: #85a2dc;
 $white: white;
 
 // Update Bulma's global variables
@@ -21,7 +22,7 @@ $primary: $midnight;
 $link: $gold;
 $danger: $dark-slate-gray;
 $info: $logo-blue;
-$warning: $old-rose;
+$warning: $med-light-blue;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -31,8 +32,11 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 $footer-background-color: $primary;
-
 $section-padding-medium: 1rem;
+$box-background-color: $warning;
+$box-radius: 10px;
+$box-shadow: 0em;
+
 .section {
     padding: $section-padding-medium;
 }
@@ -57,3 +61,4 @@ $section-padding-medium: 1rem;
 @import "../node_modules/bulma/sass/layout/footer.sass";
 @import "../node_modules/bulma/sass/components/menu.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";

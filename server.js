@@ -4,6 +4,7 @@ const fs = require('fs');
 const multer = require('multer');
 const path = require("path");
 const isWebm = require('is-webm');
+const { body } = require('express-validator')
 
 const drive = require("./drive.js")
 
@@ -67,8 +68,15 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static('uploads'));
 
 
-app.post('/record', upload.single('userAudio'), async (req, res) => {
+app.post('/record', upload.single('userAudio'),
+    body('dispName').trim().escape(),
+    body('name').trim().escape(),
+    body('email').trim().escape(),
+    body('contact').trim().escape(),
+    body('from').trim().escape(),
+    async (req, res) => {
     let formDataArray = []
+    formDataArray.push(req.body.dispName);
     formDataArray.push(req.body.name);
     formDataArray.push(req.body.email);
     formDataArray.push(req.body.contact);

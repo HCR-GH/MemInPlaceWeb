@@ -31,7 +31,18 @@ body {
         
       }
 
+p {
+    margin-top:2.5%;
+}
 
+.top-para {
+    margin-top:0%;
+}
+
+#rec-submitted {
+    margin-top:2.5%;
+    margin-bottom:2.5%;
+}
 /*Custom Checkbox styling*/
 
 .boxcontainer {

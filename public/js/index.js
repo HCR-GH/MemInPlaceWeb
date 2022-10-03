@@ -215,7 +215,10 @@ function playAudio(recorderAudioAsBlob) {
 function saveHandler (audioBlob) {
 
     recFormContainer.style.display = "block";
-    saveAudioButton.onclick = () => saveRecording(audioBlob);
+    saveAudioButton.addEventListener("click", function() {
+       saveRecording(audioBlob);
+       saveAudioButton.setAttribute("class", "button is-medium is-rounded is-primary is-loading")
+    }, {once:true});
 }
 
 function saveRecording (audioBlob) {
@@ -227,6 +230,11 @@ function saveRecording (audioBlob) {
     //add the Blob to formData
     formData.append('from', fromPage);
     formData.append('userAudio', audioBlob, 'recording.wav');
+    let dispNameEntry = formData.get('dispNameEntry');
+    if (dispNameEntry != "") {
+        formData.set('dispName', dispNameEntry);
+    }
+    formData.delete('dispNameEntry')
     let nameEntry = formData.get('nameEntry')
     if(nameEntry != "") {
         formData.set('name', nameEntry);

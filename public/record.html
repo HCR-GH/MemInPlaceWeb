@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="css/extrastyles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+      <script src="https://kit.fontawesome.com/e051ea588e.js" crossorigin="anonymous"></script>
 
 
 
@@ -32,16 +33,30 @@
         
         <div class="container mb-4 ml-4 mr-4 mt-0 is-size-5 is-family-secondary has-text-black">
         <p>Press the record button to start your recording and the stop button when you are done. You can listen back to your recording in the audio player below.
-            If you'd like to re-do your recording simply press record again and your new recording will replace your previous one. 
+          </p>
+            <p>  If you'd like to re-do your recording press record again and your new recording will replace your previous one.
             Don't forget to allow microphone permissions if prompted.</p>
         </div>
         <div class="container mb-4 ml-4 mr-4 mt-4">
           <div class="buttons is-centered">
-              <button id="prog" class="button is-family-secondary is-static is-medium is-rounded">Recording in Progress</button>
+              <button id="prog" class="button is-family-secondary is-static is-medium is-rounded">
+         Recording in Progress</button>
         </div>
             <div class="buttons is-centered">
-            <button id="record"  class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >Record</button>
-            <button id="stop" class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >Stop</button>
+            <button id="record"  class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >
+                         <span class="icon-text">
+                      <span class="icon">
+                          <i class="fa-solid fa-microphone"></i>
+                          </span>
+                             <span>Record</span>
+            </span></button>
+            <button id="stop" class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-circle-stop"></i>
+                    </span>
+                    <span>Stop</span>
+            </span></button>
         
           </div>  </div>
          
@@ -57,23 +72,46 @@
 
   <div class="container is-fluid mt-4" >
       <div class="notification is-link" id="rec-form-container">
+          <div class="notification is-primary">
+              <div class="container has-text-white ml-4 mr-4 has-text-centered is-size-3">
+          <p class="top-para">Submit Your Recording</p>
+              </div></div>
           <div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight">
-              <p>Use this form to submit your recording</p>
+
+              <p>Enter the name you would like to accompany your recording in the 'Display Name' box - leave this blank if you do not want
+              a name published alongside your recording.</p>
+              <p>To leave a recording completely anonymously leave all the boxes blank.</p>
           </div>
+          <div class="container ml-4 mr-4 is-size-6 has-text-centered has-text-black">
+              <p>
+          Submitted recordings may be made available for others to listen to through this site and/or by <a href="http://www.rememberingthepast.co.uk">Remembering the Past</a>.
+                  They may also be used as part of a research project at Newcastle University considering digital tools for exploring local history.
+          </p>
+          </div>
+
           <div class="container mt-4 mr-4 ml-4">
+              <form id="rec-form">
+                  <div class="field">
+
+                      <label class="label is-family-secondary">Display Name</label>
+                      <div class="control">
+                          <input type="hidden" name="dispName" value="Anon">
+                          <input class="input is-rounded" type="text" id="displayName" name="dispNameEntry">
+                      </div>
+                  </div>
             <div class="field">
-                <form id="rec-form">
+
                     <label class="label is-family-secondary">Name</label>
                     <div class="control">
-                        <input type="hidden" name="name" value="Anon">
-                        <input class="input is-rounded" type="text" placeholder="name" id="name" name="nameEntry">
+                        <input type="hidden" name="name" value="none">
+                        <input class="input is-rounded" type="text"  id="name" name="nameEntry">
                     </div>
             </div>
             <div class="field">
                 <label class="label is-family-secondary">Email</label>
                 <div class="control">
                     <input type="hidden" name="email" value="none">
-                  <input class="input is-rounded" type="text" placeholder="email" id="email" name="emailEntry">
+                  <input class="input is-rounded" type="email"  id="email" name="emailEntry">
                 </div>
             </div>
               <input type="hidden" name="contact" value="no">
@@ -89,17 +127,29 @@
 </form>
 
               <div class="buttons is-centered">
-                <a id="saveButton" class="button is-family-secondary is-primary is-rounded is-medium">Save</a>
+                <a id="saveButton" class="button is-family-secondary is-primary is-rounded is-medium">
+                    <span class="icon-text">
+                        <span calss="icon">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        </span>
+
+
+                    <span>Save </span>   </span></a>
               </div>
 
         </div>
     </div>
       <div class="notification is-link" id="success-container">
           <div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight has-text-centered">
-              <p>Your recording has been submitted - if you'd like to download a copy to your device click the download button.</p>
+              <p id="rec-submitted">Your recording has been submitted - if you'd like to download a copy to your device click the download button.</p>
           </div>
             <div class="buttons is-centered mt-0">
-              <a id="download" class="button is-family-secondary is-primary  is-rounded is-medium" download>Download</a>
+              <a id="download" class="button is-family-secondary is-primary  is-rounded is-medium" download>
+                  <span class="icon-text">
+                      <span class="icon">
+                          <i class="fa-solid fa-file-arrow-down"></i>
+                      </span>
+                  <span>Download</span></span></a>
             </div>
       </div>
 </div>

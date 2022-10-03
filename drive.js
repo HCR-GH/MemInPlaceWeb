@@ -24,6 +24,8 @@ const auth = new google.auth.JWT(
 const drive = google.drive({ version: 'v3', auth });
 const sheets = google.sheets({version: 'v4', auth});
 
+const folderID = '1i_yLlTB6FvQOQZLfVbPzUOw_7SjwWt3h'
+
 
 //Function to add form data to Google Sheets Doc
 function addToSheets(valuesAr) {
@@ -51,7 +53,8 @@ async function uploadFile(filePath) {
             requestBody: {
                 name:  `${fileName}`, //file name
                 mimeType: 'audio/wav',
-            },
+                parents: [folderID],
+                },
             media: {
                 mimeType: 'audio/wav',
                 body: fs.createReadStream(filePath)
