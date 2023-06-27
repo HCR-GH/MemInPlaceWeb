@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christmas Stockings | Memories in Place</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/extrastyles.css">
+    <link rel="stylesheet" href="css/no-play.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/e051ea588e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="wrapper">
+    <section class="hero is-primary">
+        <div class="hero-body">
+          
+            <img src="images/miplogo.png" id="logo">
+          
+          </div>
+      </section>
+<div class ="container ml-4 mt-3 mb-2 mr-4">
+  
+<p class="title has-text-primary is-2">Tynemouth Open Air Pool</p>
+</div>
+    <div class="container">
+      <div class="notification is-primary">
+    <div class="card ">
+      <div class="card-image js-modal-trigger" data-target="modal-TMP">
+        <figure class="image is-4by3">
+            <img src="images/TMpool.jpg" alt="Colour photo of Tynemouth open air pool from the 1990s">
+        </figure>
+      </div>
+        <div class="card-content">
+          <div class="content">
+Tynemouth Pool in the 1990s          </div>
+
+      </div>
+
+    </div>
+      </div>
+    </div>
+<div class="container mb-4 ml-4 mr-4 mt-0 is-size-5 is-family-secondary has-text-black">
+<p>Listen to a memory of Tynemouth Open Air Pool from the 1950s/60s</p>
+</div>
+<div class="container ml-6 mr-6">
+<div class="notification is-danger">
+  <div class="buttons is-centered">
+    <a href="#" id="audioControl" class="button is-large is-family-secondary is-link is-rounded is-medium has-text-black">
+      <span class="icon-text">
+      <span class="icon">
+        <i class="fa-solid fa-circle-play"></i>
+      </span>
+      <span>Play</span>
+    </span></a>
+    </div>
+  
+  <audio id="yourAudio" controls controlslist="nodownload" class="audioPlayer">
+<source src="audio/TMPool.mp3" type="audio/mpeg">
+<p class="unsupported">Sorry your browser doesn't support this audio content.</p>
+</audio>
+</div></div>
+    <div class="container mb-4 ml-4 mr-4 mt-6 is-size-5 is-family-secondary has-text-black">
+
+      <div class="buttons is-centered">
+        <a class="button is-family-secondary is-danger is-medium is-rounded" href="record.html?from=tynemouth-pool">Leave your own memory</a>
+      </div></div>
+    <div class="container mb-4 ml-4 mr-4 mt-4 is-size-5 is-family-secondary has-text-black">
+      <p>.</p>
+    </div>
+</div>
+<footer class="footer mt-6">
+<div class="content has-text-centered has-text-white">
+  <p>Audio copyright Remembering the Past - used here with permission</p>
+<p>Memories in Place is part of a PhD project at <a href="https://openlab.ncl.ac.uk/">Open Lab</a> working with <a href="https://www.rememberingthepast.co.uk/">Remembering the Past</a></p>
+
+</div>
+
+
+</footer>
+
+
+  <div id="modal-TMP" class="modal">
+      <div class="modal-background"></div>
+
+      <div class="modal-content">
+          <div class="box">
+              <p>Modal JS example</p>
+              <img src="images/TMpool.jpg" alt="Colour photo of Tynemouth open air pool from the 1990s">
+          </div>
+      </div>
+
+      <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <script>document.addEventListener('DOMContentLoaded', () => {
+      // Functions to open and close a modal
+      function openModal($el) {
+          $el.classList.add('is-active');
+      }
+
+      function closeModal($el) {
+          $el.classList.remove('is-active');
+      }
+
+      function closeAllModals() {
+          (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+              closeModal($modal);
+          });
+      }
+
+      // Add a click event on buttons to open a specific modal
+      (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+          const modal = $trigger.dataset.target;
+          const $target = document.getElementById(modal);
+
+          $trigger.addEventListener('click', () => {
+              openModal($target);
+          });
+      });
+
+      // Add a click event on various child elements to close the parent modal
+      (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+          const $target = $close.closest('.modal');
+
+          $close.addEventListener('click', () => {
+              closeModal($target);
+          });
+      });
+
+      // Add a keyboard event to close all modals
+      document.addEventListener('keydown', (event) => {
+          const e = event || window.event;
+
+          if (e.keyCode === 27) { // Escape key
+              closeAllModals();
+          }
+      });
+  });</script>
+<script src="js/play-button.js"></script>
+
+</body>
+
+
+</html>
