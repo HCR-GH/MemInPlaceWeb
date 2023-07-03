@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/HCR-GH/MemInPlaceWeb#readme",
   "dependencies": {
+    "bulma-carousel": "^4.0.24",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "express-validator": "^6.14.2",
