@@ -24,7 +24,7 @@
 | TMpool.jpg                     | Public Domain                                                                               | <https://flic.kr/p/7ecMow>                                                                                                                           | Newcastle Libraries                                         |
 | tynemouthpool.jpg              | Public Domain                                                                               | <https://flic.kr/p/7deyVL>                                                                                                                           | Newcastle Libraries                                         |
 | whelk.jpeg                     | No known copyright restrictions | <https://commons.wikimedia.org/wiki/File:FMIB_38567_English_Whelk_and_its_Egg_Cocoons.jpeg> | Freshwater and Marine Image Bank, University of Washington |
- 
+ | xmasparty.jpeg | No known copyright restrictions | <https://flic.kr/p/JNcVgS> | Tyne & Wear Archives & Museums | 
 
 
 
