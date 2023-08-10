@@ -44,7 +44,15 @@
         
         
         <div class="container mb-4 ml-4 mr-4 mt-0 is-size-5 is-family-secondary has-text-black">
-        <p>Press the record button to start your recording and the stop button when you are done. You can listen back to your recording in the audio player below.
+            <p>Inspired by what you've heard to share your own memories of this place? Then use the recording function below to record and share your memory.
+
+               <p> Memories shared here may be studied and used anonymously in research outputs such as papers and presentations and as materials in
+            further research activities connected to this project. They may also be made available to listen to publicly.
+            If you do not wish your memory to be used in these ways please do not submit it. For more information please see the <a href="About.html">about page</a>. If you've any questions or concerns and wish to get in touch please <a href="contact.html">contact us here</a>.</p>
+            </p>
+
+            <p class="title has-text-primary is-family-primary is-4">How to record</p>
+                    <p>Press the record button to start your recording and the stop button when you are done. You can listen back to your recording in the audio player below.
           </p>
             <p>  If you'd like to re-do your recording press record again and your new recording will replace your previous one.
             Don't forget to allow microphone permissions if prompted.</p>
@@ -79,7 +87,7 @@
         <audio controls controlslist="nodownload" class="audioPlayerRec">
         <p class="unsupported">Sorry your browser doesn't support this audio content.</p>
         </audio>
-        </div></div>
+        </div>
 
 
   <div class="container is-fluid mt-4" >
@@ -90,30 +98,16 @@
               </div></div>
           <div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight">
 
-              <p>Enter the name you would like to accompany your recording in the 'Display Name' box - leave this blank if you do not want
-              a name published alongside your recording.</p>
-              <p>To leave a recording completely anonymously leave all the boxes blank.</p>
+              <p>Use the form below to submit your recording to the project. If you want to leave your recording anonymously leave all the boxes blank and just tap upload.</p>
           </div>
-          <div class="container ml-4 mr-4 is-size-6 has-text-centered has-text-black">
-              <p>
-          Submitted recordings may be made available for others to listen to through this site and/or by <a href="http://www.rememberingthepast.co.uk">Remembering the Past</a>.
-                  They may also be used as part of a research project at Newcastle University considering digital tools for exploring local history.
-                  By submitting a recording you agree to it being used in these ways.</p>
-          </div>
+
 
           <div class="container mt-4 mr-4 ml-4">
               <form id="rec-form">
-                  <div class="field">
 
-                      <label class="label is-family-secondary">Display Name</label>
-                      <div class="control">
-                          <input type="hidden" name="dispName" value="Anon">
-                          <input class="input is-rounded" type="text" id="displayName" name="dispNameEntry">
-                      </div>
-                  </div>
             <div class="field">
 
-                    <label class="label is-family-secondary">Name</label>
+                    <label class="label is-family-secondary">Name (can be a nickname)</label>
                     <div class="control">
                         <input type="hidden" name="name" value="none">
                         <input class="input is-rounded" type="text"  id="name" name="nameEntry">
@@ -129,7 +123,8 @@
               <input type="hidden" name="contact" value="no">
             <div class="field">
               <div class="control">
-                <label class="boxcontainer">As 'Memories in Place' is part of a Newcastle University research project we would like to gather feedback from users as part of the research. If you are happy to be contacted by a researcher using the email address provided please tick here.
+                <label class="boxcontainer">As 'Memories in Place' is part of a Newcastle University research project we would like to gather feedback from users as part of the research.
+                    If you are happy to be contacted by a researcher using the email address provided please tick here.
                 <input type="checkbox" id="contact" name="contact2" value="yes">
                 <span class="checkmark"></span>
                 </label>
@@ -164,7 +159,16 @@
                   <span>Download</span></span></a>
             </div>
       </div>
-</div>
+          <div class="buttons is-centered">
+              <button class="button is-family-secondary is-danger is-medium is-rounded mb-4" onclick="history.back()">Back</button>
+          </div>
+  </div>
+
+      <div class="notification is-danger is-light mt-5 mx-4">
+          <button class="delete mb-0"></button>
+
+         <p class="mt-0 is-size-5">If you want to remove a previously submitted recording from the project please <a href="contact.html">contact us here</a>. </p></div>
+  </div>
 
 <footer class="footer mt-6">
 <div class="content has-text-centered has-text-white">
@@ -180,6 +184,7 @@
 
 <script src="../js/audio-recording.js"></script>
 <script src="js/index.js"></script>
+
 
 
 </body>

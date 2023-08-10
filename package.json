@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/HCR-GH/MemInPlaceWeb#readme",
   "dependencies": {
+    "@creativebulma/bulma-collapsible": "^1.0.4",
     "bulma-carousel": "^4.0.24",
+    "cookies-eu-banner": "^2.0.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "express-validator": "^6.14.2",
