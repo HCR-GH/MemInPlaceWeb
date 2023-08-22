@@ -17,6 +17,6 @@ yourAudio[method](); //calls pause or play (depending on what method is set to)
 return false;
 }
 yourAudio.addEventListener('ended', function() {
-    ctrl.innerHTML =  '<span class="icon-text"><span class="icon"><i class="fa-solid fa-circle-play"></i></span><span>Play</span></span>' 
+    ctrl.innerHTML =  '<span class="icon-text"><span class="icon"><i class="fa-solid fa-circle-play"></i></span><span>Listen</span></span>'
 })
 ;
