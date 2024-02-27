@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leave your own memory | Memories in Place</title>
+    <link rel="stylesheet" href="../css/mystyles.css">
+    <link rel="stylesheet" href="../css/extrastyles.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+      <script src="https://kit.fontawesome.com/e051ea588e.js" crossorigin="anonymous"></script>
+      <script type="text/plain" data-cookie-consent="tracking">
+          !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+          posthog.init('phc_mBFmnzEv4fMz2isUwIX4odGEwBjixv6uoeCfXopSdOQ',{api_host:'https://eu.posthog.com'})
+      </script>
+
+
+</head>
+<body>
+<script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+        cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Memories in Place"});
+    });
+</script>
+
+<noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <div id="wrapper">
+    <section class="hero is-primary">
+        <div class="hero-body">
+          
+            <img src="../images/miplogo.png" id="logo" alt="Memories in Place logo">
+          
+          </div>
+      </section>
+
+      <div class ="container ml-4 mt-3 mb-2 mr-4">
+  
+        <p class="title has-text-primary is-2">Record your own memory</p>
+        </div>
+        
+
+        
+        
+        <div class="container mb-4 ml-4 mr-4 mt-0 is-size-5 is-family-secondary has-text-black">
+            <p>Inspired by what you've heard to share your own thoughts on the past, present or future of the University? Then use the recording function below to record and share your memory.</p>
+
+               <p>Recordings will be passed to the University's Experience Week team and may be used in future activities by them. If you have any questions or concerns please use the form on the <a href="EWAbout.html">about page</a> to contact us.</p>
+
+
+            <p class="title has-text-primary is-family-primary is-4">How to record</p>
+                    <p>Press the record button to start your recording and the stop button when you are done. You can listen back to your recording in the audio player below.
+          </p>
+            <p>  If you'd like to re-do your recording press record again and your new recording will replace your previous one.
+            Don't forget to allow microphone permissions if prompted.</p>
+        </div>
+        <div class="container mb-4 ml-4 mr-4 mt-4">
+          <div class="buttons is-centered">
+              <button id="prog" class="button is-family-secondary is-static is-medium is-rounded">
+         Recording in Progress</button>
+        </div>
+            <div class="buttons is-centered">
+            <button id="record"  class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >
+                         <span class="icon-text">
+                      <span class="icon">
+                          <i class="fa-solid fa-microphone"></i>
+                          </span>
+                             <span>Record</span>
+            </span></button>
+            <button id="stop" class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-circle-stop"></i>
+                    </span>
+                    <span>Stop</span>
+            </span></button>
+        
+          </div>  </div>
+         
+        
+        
+        <div class="container ml-4 mr-4">
+
+        <audio controls controlslist="nodownload" class="audioPlayerRec">
+        <p class="unsupported">Sorry your browser doesn't support this audio content.</p>
+        </audio>
+        </div>
+
+
+  <div class="container is-fluid mt-4" >
+      <div class="notification is-link" id="rec-form-container">
+          <div class="notification is-primary">
+              <div class="container has-text-white ml-4 mr-4 has-text-centered is-size-3">
+          <p class="top-para">Submit Your Recording</p>
+              </div></div>
+          <div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight">
+
+              <p>Use the form below to submit your recording to the project. If you want to leave your recording anonymously leave all the boxes blank and just tap upload.</p>
+          </div>
+
+
+          <div class="container mt-4 mr-4 ml-4">
+              <form id="rec-form">
+
+            <div class="field">
+
+                    <label class="label is-family-secondary">Name (can be a nickname)</label>
+                    <div class="control">
+                        <input type="hidden" name="name" value="none">
+                        <input class="input is-rounded" type="text"  id="name" name="nameEntry">
+                    </div>
+            </div>
+            <div class="field">
+                <label class="label is-family-secondary">Email</label>
+                <div class="control">
+                    <input type="hidden" name="email" value="none">
+                  <input class="input is-rounded" type="email"  id="email" name="emailEntry">
+                </div>
+            </div>
+              <input type="hidden" name="contact" value="no">
+
+</form>
+
+              <div class="buttons is-centered">
+                <a id="saveButton" class="button is-family-secondary is-primary is-rounded is-medium">
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </span>
+
+
+                    <span>Upload </span>   </span></a>
+              </div>
+
+        </div>
+    </div>
+      <div class="notification is-link" id="success-container">
+          <div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight has-text-centered">
+              <p id="rec-submitted">Your recording has been submitted - if you'd like to download a copy to your device click the download button.</p>
+          </div>
+            <div class="buttons is-centered mt-0">
+              <a id="download" class="button is-family-secondary is-primary  is-rounded is-medium" download>
+                  <span class="icon-text">
+                      <span class="icon">
+                          <i class="fa-solid fa-file-arrow-down"></i>
+                      </span>
+                  <span>Download</span></span></a>
+            </div>
+      </div>
+          <div class="buttons is-centered">
+              <button class="button is-family-secondary is-danger is-medium is-rounded mb-4" onclick="history.back()">Back</button>
+          </div>
+  </div>
+
+      <div class="notification is-danger is-light mt-5 mx-4">
+          <button class="delete mb-0"></button>
+
+         <p class="mt-0 is-size-5">If you want to remove a previously submitted recording from the project please use the contact form on the <a href="EWAbout.html">About page</a>. </p></div>
+  </div>
+
+<footer class="footer mt-6">
+    <div class="content has-text-centered has-text-white">
+        <p>Audio copyright Memories in Place</p>
+        <p>Memories in Place was developed as part of a PhD project at <a href="https://openlab.ncl.ac.uk/">Open Lab</a> at Newcastle University.</p>
+        <p> <a href="EWAbout.html">About this site</a></p>
+        <a href="#" id="open_preferences_center">Update cookies preferences</a>
+
+    </div>
+
+
+</footer>
+
+<script src="../js/audio-recording.js"></script>
+<script src="../js/index.js"></script>
+
+
+
+</body>
+
+
+</html>
