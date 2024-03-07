@@ -122,3 +122,10 @@ p {
     max-width: 600px;
     height: auto;
 }
+
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
